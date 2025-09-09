@@ -1,0 +1,253 @@
+nav {
+    font-weight: bold;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    display: flex; 
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+h1{
+    margin: 0;
+    color:lightslategrey;
+    font-size: 200%;
+}
+h2{
+    margin-top: 4%;
+    text-align: center;
+    font-size:larger;
+    font-weight:bold ;
+    color: lightslategrey;
+    font-size: 170%;
+}
+p{
+    text-align:center;
+}
+pre{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    color:black;
+    text-align:justify;
+    margin-top:3% ;
+}
+#button {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#button:hover {
+    background-color: #e73370;
+}
+#butt{
+    display: block;
+    margin: 0 auto;
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color:cadetblue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;    
+}
+#butt:hover{
+    background-color: lightskyblue;
+}
+h3{
+    text-align: center;
+    font-size: 150%;
+    color:darkblue;
+}
+nav a{
+     text-decoration: none;
+    color: lightslategray;
+    font-weight: 600;
+    margin-left: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+}
+nav a:hover{
+    background-color: #F0E2E7;
+    color: #E68BAD;
+}
+nav a:first-of-type{
+     margin-left: auto;
+}
+body#index {
+    background-color: #f8c8dc;
+    background-image: url('image/bg.jpg'); /* replace with your image path */
+    background-repeat: no-repeat;           /* prevents tiling */
+    background-size: cover;                 /* makes image cover the whole page */
+    background-position: center;            /* centers the image */
+    background-attachment: fixed;           /* keeps image fixed while scrolling */
+    margin: 0;                              /* removes default margin */
+    padding: 0;                              /* removes default padding */
+    background-attachment: fixed;
+                           
+}
+.form-container input::placeholder,
+.form-container textarea::placeholder {
+  color: #999;         
+}
+
+.form-container input:focus::placeholder,
+.form-container textarea:focus::placeholder {
+  color: #ff6ec7;      
+}
+
+.form-container {
+  background: transparent;  
+  box-shadow: none;        
+  padding: 0;               
+  border-radius: 0;        
+  text-align: center;       
+}
+
+.form-container input,
+.form-container textarea {
+  width: 300px;            
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+  outline: none;
+  border-color: #ff6ec7;
+  box-shadow: 0 0 6px rgba(255, 110, 199, 0.6);
+}
+
+.form-container button {
+  background: #ff6ec7;
+  border: none;
+  padding: 12px 20px;
+  color: white;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-container button:hover {
+  background: #d94da8;
+}
+.category-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+.category-container > div {
+    background-color: #F0E2E7;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 1rem;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.category-container a {
+    text-decoration: none; /* This removes the underline from the link */
+    font-size: 1rem;
+    color: #8C8C8C; /* A neutral grey color */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.category-container a:hover {
+    color: #E68BAD; /* The link color changes to a vibrant pink on hover */
+}
+.category-container h3 {
+    font-size: 1.8rem;
+    font-weight: 700; /* Changed from 600 to 700 for a bolder look */
+    margin-bottom: 1rem;
+    color: #E68BAD; /* Changed from a dark grey to a vibrant pink */
+}
+
+.hero-section{
+    background-size: cover;
+    background-position: center;
+}
+.product-grid {
+      background-color: #ffe4ec; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* exactly 4 products per row */
+    gap: 20px;               /* space between products */
+    padding: 20px;
+    justify-items: center;
+    gap: 120px;    /* center each product in its cell */
+}
+
+.product {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+       background-color: #ffe4ec;  
+    border-radius: 10px;       
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.product img {
+    width: 100%;
+    height: 250px;       
+    object-fit: cover;   
+    border-radius: 10px;
+}
+
+.product h4 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.product p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 per row on medium screens */
+    }
+}
+
+@media (max-width: 900px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* 1 per row on mobile */
+    }
+}
